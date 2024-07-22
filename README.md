@@ -1,10 +1,9 @@
-# ric
-Référendum d'initiative citoyenne
 Présentation de l'application Référendum d'Initiative Citoyenne (RIC)
 1. Introduction
 L'application Référendum d'Initiative Citoyenne (RIC) est un projet innovant visant à encourager la participation citoyenne, promouvoir la démocratie directe et responsabiliser les individus dans les processus législatifs. En développant cette application, nous proposons une solution intuitive, sécurisée et transparente qui permet aux citoyens de s'impliquer directement dans les décisions qui les concernent.
 2. Fonctionnalités clés
-Un formulaire binaire : Les citoyens peuvent proposer un référendum via un formulaire binaire, rédigé en termes juridiques, afin de s'assurer que les questions posées sont claires et précises.
+
+* Un formulaire binaire : Les citoyens peuvent proposer un référendum via un formulaire binaire, rédigé en termes juridiques, afin de s'assurer que les questions posées sont claires et précises.
 Échelle géopolitique : Les référendums sont classés en fonction de leur échelle géopolitique (local, régional, national, continental, international), permettant aux citoyens de s'impliquer dans les décisions qui les concernent directement.
 Fonctionnalités législatives : Les modalités de vote sont établies en accord avec l'initiateur du référendum et leurs fonctionnalités législatives.
 Accès au vote : Chaque citoyen inscrit sur la plateforme a un accès minimum à 10 référendums en cours, sélectionnés de manière aléatoire. Cela permet une participation large aux processus législatifs.
