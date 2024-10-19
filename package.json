@@ -30,6 +30,7 @@
         "test": "react-scripts test",
         "eject": "react-scripts eject",
 
+        "ric": "sass --watch src/scss/ric.scss src/css/ric.css",
         "compileSCSS": "sass --watch watch.scss src/css/fib.css",
         "Mission": "sass --watch src/scss/mission.scss src/css/fib.css",
         "scss": "sass --watch await.scss src/css/feuilles_style.css",

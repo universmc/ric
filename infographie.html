@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlgoGenesis - Infographie RIC</title>
+
+    <!-- Lien vers le fichier CSS compilé (style.css) -->
+    <link rel="stylesheet" href="ric.css">
+
+    <!-- Three.js CDN pour les animations 3D -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .header, .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+        }
+
+        .main {
+            flex-grow: 1;
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .main h2 {
+            color: #ff6600;
+        }
+
+        /* Style pour le 3D canvas */
+        #three-canvas {
+            width: 100%;
+            height: 400px;
+            background-color: #000;
+        }
+
+        /* Style pour les boutons interactifs */
+        .btn {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Section Header -->
+    <header class="header">
+        <h1>Infographie R.I.C - Gilets Jaunes</h1>
+        <p>Explorez les référendums citoyens avec AlgoGenesis</p>
+    </header>
+
+    <!-- Contenu principal -->
+    <main class="main">
+        <h2>Logo des Gilets Jaunes et RIC</h2>
+
+        <!-- Intégration du Logo SVG des Gilets Jaunes avec le Sigle RIC -->
+        <div class="logo-container">
+            <svg version="1.1" id="gilets-jaunes-ric" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve">
+                <!-- Cercle jaune représentant les Gilets Jaunes -->
+                <circle cx="150" cy="150" r="100" fill="#f9d835" />
+                
+                <!-- Texte du sigle RIC -->
+                <text x="50%" y="50%" text-anchor="middle" fill="#000000" font-size="50" font-family="Arial" dy=".3em">RIC</text>
+            </svg>
+        </div>
+
+        <!-- Animation 3D (Three.js) -->
+        <div id="three-canvas"></div>
+
+        <!-- Call to Action Button -->
+        <a href="#explore" class="btn btn-primary btn-lg">Participer au Référendum</a>
+    </main>
+
+    <!-- Section Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 AlgoGenesis - Propulsé par l'IA et la démocratie directe</p>
+    </footer>
+
+    <!-- Script pour gérer le canvas 3D avec Three.js -->
+    <script>
+        // Basic Three.js setup
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / 400, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer();
+        renderer.setSize(window.innerWidth, 400);
+        document.getElementById('three-canvas').appendChild(renderer.domElement);
+
+        // Create a rotating cube to represent voter activity
+        const geometry = new THREE.BoxGeometry(1, 1, 1);
+        const material = new THREE.MeshBasicMaterial({ color: 0xf9d835 });
+        const cube = new THREE.Mesh(geometry, material);
+        scene.add(cube);
+
+        camera.position.z = 5;
+
+        const animate = function () {
+            requestAnimationFrame(animate);
+
+            cube.rotation.x += 0.01;
+            cube.rotation.y += 0.01;
+
+            renderer.render(scene, camera);
+        };
+
+        animate();
+    </script>
+
+</body>
+</html>

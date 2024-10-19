@@ -1,0 +1,61 @@
+// Variables
+$yellow-gilets: #f9d835;
+$black: #000000;
+$white: #ffffff;
+
+// Stylisation du corps de la page
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: $black;
+  color: $white;
+}
+
+// Stylisation du header
+.header {
+  background-color: $black;
+  color: $white;
+  padding: 20px;
+  text-align: center;
+
+  h1 {
+    font-size: 2.5em;
+  }
+}
+
+// Boutons
+.button-gilets {
+  background-color: $yellow-gilets;
+  color: $black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  
+  &:hover {
+    background-color: darken($yellow-gilets, 10%);
+  }
+}
+
+// Logos et animations
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#gilets-jaunes-ric {
+  width: 200px;
+  height: auto;
+  animation: rotateLogo 10s infinite linear;
+}
+
+// Animation pour le logo
+@keyframes rotateLogo {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

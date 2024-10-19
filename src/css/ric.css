@@ -1,0 +1,51 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.header {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+.header h1 {
+  font-size: 2.5em;
+}
+
+.button-gilets {
+  background-color: #f9d835;
+  color: #000000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.button-gilets:hover {
+  background-color: #f4cc07;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#gilets-jaunes-ric {
+  width: 200px;
+  height: auto;
+  animation: rotateLogo 10s infinite linear;
+}
+
+@keyframes rotateLogo {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=ric.css.map */
