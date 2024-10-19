@@ -1,0 +1,21 @@
+{
+    "categories": {
+    "Development": [
+    {
+    "name": "Créer une API",
+    "description": "Développer une API pour l'application How To"
+    },
+    {
+    "name": "Intégrer l'IA",
+    "description": "Intégrer l'IA idéale au système de l'API"
+    }
+    ],
+    "Deployment": [
+    {
+    "name": "Mise en production",
+    "description": "Déployer l'application How To"
+    }
+    ]
+    }
+    }
+    

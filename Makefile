@@ -1,7 +1,140 @@
-# Define variables
-NODE_ENV = development
-NODE_PORT = 5144
-NODE_APP = index.js
+SHELL := /bin/bash
+
+COMMANDE1_MSG="✨ Menu ✨"
+COMMANDE1_MSG="✨ Lancement de l'application✨"
+COMMANDE2_MSG="✨ Initialisation de la session de Brainstormoming✨ "
+COMMANDE3_MSG="✨ brainstorming generation d idées ✨"
+COMMANDE4_MSG="✨ Initialisation du chatbot✨"
+COMMANDE5_MSG="✨ Initialisation du Prompt Model"
+COMMANDE6_MSG="🏗 Factory Generate Howto 📜 ✨"
+COMMANDE7_MSG="🏗 Factory Start Building composant 📦 ✨"
+COMMANDE8_MSG="🏗 Factory running Compose page 📦 ✨"
+COMMANDE9_MSG="✨ Mise à jour du repertoire sur github✨"
+COMMANDEU_MSG="✨ Mise à jour du repertoire sur github✨"
+COMMANDE10_MSG="✨Exit session✨"
+menuIA_MSG="✨ Menu ✨"
+howto_MSG="✨howto✨"
+gemini_MSG="✨Test F2✨"
+neoFs_MSG="✨Initialisation du neoFS✨"
+worker_MSG="✨Initialisation du Worker -ia ✨"
+gpt_MSG="✨Initialisation de GPT ✨"
+gpt_MSG="✨Initialisation du studio Avatars ✨"
+meta_MSG="✨Initialisation du Groupe Meta ✨"
+gem_MSG="✨Initialisation du Gem_bot✨"
+neoFs_MSG="✨Initialisation du chatbot✨"
+groq_MSG="✨Initialisation de Groq✨"
+android_MSG="✨Initialisation IA Android✨"
+blog_MSG="✨Initialisation du Blog ✨"
+ML_MSG="✨Match In Leraning✨"
+gptWallet_MSG="✨Initialisation de Gpt-WAllet✨"
+Mandatory_MSG="✨Initialisation du Mandataire✨"
+
+# Ajoutez une règle pour chaque commande
+
+commandeR:
+	@echo "${COMMANDE2_MSG}"
+	@./menu.sh
+
+android:
+	@echo "${menuIA_MSG}"
+	@node wow/android/Android_Pibot.js
+
+ia:
+	@echo "${menuIA_MSG}"
+	@./intro.sh
+
+commande1:
+	@echo "${COMMANDE2_MSG}"
+	@npm run start
+
+commande2:
+	@echo "${COMMANDE2_MSG}"
+	@./intro.sh
+map:
+	@echo "${COMMANDE4_MSG}"
+	@npm run start items/mapascii/
+
+commande3:
+	@echo "${COMMANDE3_MSG}"
+	@node .setup/brainstorming.js
+
+commande4:
+	@echo "${COMMANDE4_MSG}"
+	@node .setup/chatCompletion.js
+
+commande5:
+	@echo "${COMMANDE5_MSG}"
+	@node .setup/myprompt.js
+
+howto:
+	@echo "${howto_MSG}"
+	@node .setup/howto.js
+
+commande7:
+	@echo "${COMMANDE5_MSG}"
+	@node build/Composants.js
+
+commande8:
+	@echo "${COMMANDE5_MSG}"
+	@node src/app/composer.js
+
+update:
+	@echo "${Update_MSG}"
+	@git add .
+	@git commit -m "Update"
+	@git push
+	@echo "✨ Mise à jour terminée✨"
+
+commande10:
+	@echo "${COMMANDE10_MSG}"
+
+gemini:
+	@echo "${gemini_MSG}"
+	@node models/gemini/Gemini_Pibot.js
+
+neofs:
+	@echo "${neoFs_MSG}"
+	@node data/neofs/neoFs_Pibot
+
+gpt:
+	@echo "${gpt_MSG}"
+	@node models/openai/gpt-io.js
+
+avatars:
+	@echo "${avatars_MSG}"
+	@node Public/Avatars_Pibot.js
+
+worker:
+	@echo "${worker_MSG}"
+	@node workspace/worker_Pibot.js
+gem:
+	@echo "${gem_MSG}"
+	@node models/Gem_Pibot/Gem_bot.js
+
+groq:
+	@echo "${groq_MSG}"
+	@node auto/models/groq/groq_Pibot.js
+
+commandeY:
+	@echo "${blog_MSG}"
+	@node blog/blog_Pibot.js
+
+commandeU:
+	@echo "${COMMANDEU_MSG}"
+	@node user/user_Pibot.js
+
+
+commandeM:
+	@echo "${COMMANDEM_MSG}"
+	@node data/meta_Pibot.js
+
+tasks:
+	@node .setup/role.mjs showTasks
+
+# Tâche Make pour ajouter une tâche
+add-task:
+	@node .setup/role.mjs addTask $(task)
+
 
 menu :
 	@echo "Welcom To cycliq Economical system."
@@ -35,63 +168,27 @@ menu :
 
 MAGIC_TARGETS := codex build rep file script clean
 
-update:
-	@echo "✨ Mise en état du dossier de l'enquête sur les partie Politique de la Macronnie ✨"
-	@git add .
-	@git commit -m "test"
-	@git push
-	
 all: $(MAGIC_TARGETS)
 
+srv : run start
 
-init: gantt phase1 phase2 phase3 phase4 phase5 phase6 phase7 phase8
-# Magic COMPILER groq quantum
-gantt:
-	@echo "initialisation de l'instance"
-	@git clone auto
+start:
+	@npm start
 
-phase1:
-	@echo "phase de conception"
-	@node mission.js
+run:
+	@node ./srv/srv.js
 
-phase2:
-	@echo "phase de configuration"
-	@node configuration.js
+gitC:
+	@echo "✨ Mise en état du dossier sur github✨"
+	@git add .
+	@git commit -m "Connection"
+	@git push
+	@echo "✨ Mise à jour terminée✨"
+S1:
+	@echo "✨ Mrun session brainstorming ✨"
+	@git add .
+	@git commit -m "sesssion brainstorm"
+	@git push
+	@echo "✨ Mise à jour terminée✨"
 
-phase3:
-	@echo "phase d'entrainnement du model IA"
-	@node models.js
-
-phase4:
-	@echo "phase de gestion et iteration du frontend"
-	@git clone src.js
-	
-phase5:
-	@echo "phase de gestion et iteration du backend"
-	@node srv.js
-
-
-phase6:
-	@echo "phase de test et debugage"
-	@node data.js
-
-phase7:
-	@echo "phase de validation documentation"
-	@node models/modelcss.js
-
-phase8:
-	@echo "phase d'affiliation et contribution"
-	@node models/modelcss.js
-
-server:
-	@node srv/Telegram/server.js
-	@echo "Unleashing quantum Magic Mafile with every script we shape" 
-# Ouvrez-vous aux dimensions cachées
-clean-r:
-	@echo "Returning the quantum realm to pristine state"
-	@rm -rf data/* build/* src/* data/*
-
-clean-R:
-	@echo "Unweaving the fabric, a celestial fate"@rm -rf output/ build/ src/ data/
-
-clean: clean-r clean-R
+.PHONY: sh commande1 commande2 commande3 commande4 commande5

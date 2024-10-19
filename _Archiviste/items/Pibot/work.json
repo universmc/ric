@@ -1,0 +1,41 @@
+{
+    "project": "Orbe -IA",
+    "repository": "https://github.com/universmc/pibot",
+    "hours": 10,
+    "schedule": [
+    {
+    "duration": 2,
+    "tasks": [
+    "Étudier la structure du projet",
+    "Lire la documentation existante",
+    "Configurer l'environnement de développement"
+    ]
+    },
+    {
+    "duration": 2,
+    "tasks": [
+    "Analyser les composants existants",
+    "Prioriser les tâches",
+    "Créer une liste de tâches"
+    ]
+    },
+    {
+    "duration": 3,
+    "tasks": [
+    "Modifier les composants et fichiers existants",
+    "Développer des tests unitaires",
+    "Effectuer une revue de code"
+    ]
+    },
+    {
+    "duration": 3,
+    "tasks": [
+    "Intégrer les composants mis à jour",
+    "Exécuter des tests d'intégration",
+    "Mettre à jour la documentation",
+    "Créer une demande de pull"
+    ]
+    }
+    ]
+    }
+    

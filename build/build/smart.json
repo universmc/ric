@@ -1,0 +1,70 @@
+{
+    "phases": [
+      {
+        "id": 1,
+        "title": "Phase 1: Conception",
+        "description": "Développer la maquette et définir les objectifs du site web.",
+        "objectives": {
+          "specific": "Créer une maquette fonctionnelle pour la page d'accueil du site.",
+          "measurable": "La maquette doit inclure au moins 5 sections (header, body, footer, etc.).",
+          "attainable": "Utiliser Figma ou un autre outil de wireframing pour la conception.",
+          "realistic": "Aucune intégration de code n'est nécessaire pour cette phase.",
+          "timeBound": "La phase doit être complétée en 5 jours."
+        },
+        "status": "pending"
+      },
+      {
+        "id": 2,
+        "title": "Phase 2: Développement Backend",
+        "description": "Mettre en place le backend avec Node.js et Express.",
+        "objectives": {
+          "specific": "Implémenter les routes API pour la gestion des utilisateurs et des opportunités.",
+          "measurable": "Les routes GET, POST, PUT, DELETE doivent fonctionner avec des tests unitaires.",
+          "attainable": "Utiliser Node.js, Express et MongoDB.",
+          "realistic": "L'infrastructure de base doit être mise en place avec les contrôleurs et les routes.",
+          "timeBound": "La phase doit être complétée en 7 jours."
+        },
+        "status": "pending"
+      },
+      {
+        "id": 3,
+        "title": "Phase 3: Développement Frontend",
+        "description": "Créer le frontend avec React.js et intégration des API backend.",
+        "objectives": {
+          "specific": "Développer la page d'accueil et les pages utilisateur en React.",
+          "measurable": "Le site doit être fonctionnel et réactif, avec l'intégration des API backend.",
+          "attainable": "Utiliser React.js avec des composants fonctionnels.",
+          "realistic": "L'interface utilisateur doit être simple mais efficace.",
+          "timeBound": "La phase doit être complétée en 10 jours."
+        },
+        "status": "pending"
+      },
+      {
+        "id": 4,
+        "title": "Phase 4: Tests et validation",
+        "description": "Tester l'application de bout en bout, incluant les tests unitaires et d'intégration.",
+        "objectives": {
+          "specific": "Exécuter des tests unitaires et d'intégration pour le backend et le frontend.",
+          "measurable": "Tous les tests doivent passer avec succès (au moins 80% de couverture).",
+          "attainable": "Utiliser Jest pour les tests unitaires et Cypress pour les tests d'intégration.",
+          "realistic": "Des corrections mineures de bugs peuvent être faites au besoin.",
+          "timeBound": "La phase doit être complétée en 5 jours."
+        },
+        "status": "pending"
+      },
+      {
+        "id": 5,
+        "title": "Phase finale: Déploiement et optimisation",
+        "description": "Déployer l'application et optimiser les performances.",
+        "objectives": {
+          "specific": "Déployer l'application sur un serveur cloud (Heroku, AWS, ou autre).",
+          "measurable": "L'application doit être accessible publiquement et répondre en moins de 200ms.",
+          "attainable": "Utiliser Docker pour la containerisation et Nginx pour la gestion du serveur.",
+          "realistic": "Le déploiement doit inclure une gestion de version (CI/CD).",
+          "timeBound": "La phase doit être complétée en 3 jours."
+        },
+        "status": "pending"
+      }
+    ]
+  }
+  

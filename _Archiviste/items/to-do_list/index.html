@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>How To - To-Do List</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<h1>How To - To-Do List</h1>
+<div id="todo-list"></div>
+<script>
+$.getJSON("to-do_list.json", function(data) {
+        const todoList = [];
+        $.each(data, function(index, todo) {
+          todoList.push(`<li><span>${todo.name}</span> - ${todo.description}</li>`);
+        });
+
+        const todoListHtml = `<ul>${todoList.join("")}</ul>`;
+        $("#todo-list").html(todoListHtml);
+      });
+    </script>
+</body>
+</html>

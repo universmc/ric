@@ -1,0 +1,123 @@
+// Variables pour les couleurs et la typographie
+$primary-color: #3498db;
+$secondary-color: #2c3e50;
+$light-bg: #ecf0f1;
+$text-color: #34495e;
+$font-family: 'Open Sans', sans-serif;
+
+// Global reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family;
+  background-color: $light-bg;
+  color: $text-color;
+  line-height: 1.6;
+}
+
+header {
+  background-color: $secondary-color;
+  padding: 10px 0;
+}
+
+.navbar {
+  text-align: center;
+
+  .nav-menu {
+    list-style: none;
+
+    li {
+      display: inline-block;
+      margin: 0 15px;
+
+      a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+// Hero section
+.hero {
+  background-color: $primary-color;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+
+  .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+// Section styling
+.section {
+  padding: 60px 20px;
+  text-align: center;
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: $secondary-color;
+  }
+
+  p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+
+.bg-light {
+  background-color: $light-bg;
+}
+
+// Footer styling
+.footer {
+  background-color: $secondary-color;
+  color: white;
+  text-align: center;
+  padding: 20px;
+
+  p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+}
+
+// Keyframes for animations
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section {
+  animation: fadeInUp 0.8s ease;
+}
+

@@ -1,0 +1,25 @@
+{
+    "tasks": [
+    {
+    "name": "Définir les objectifs du cours",
+    "description": "Définir les objectifs clés que les étudiants doivent atteindre",
+    "priority": "high"
+    },
+    {
+    "name": "Planifier le contenu",
+    "description": "Organiser les sections et les modules",
+    "priority": "medium"
+    },
+    {
+    "name": "Créer des exercices et des défis",
+    "description": "Développer des exercices pratiques pour les étudiants",
+    "priority": "high"
+    },
+    {
+    "name": "Préparer les diapositives",
+    "description": "Créer les diapositives pour chaque leçon",
+    "priority": "medium"
+    }
+    ]
+    }
+    

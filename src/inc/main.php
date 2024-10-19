@@ -1,3 +1,1 @@
-<div class="display grid">
-
-</div>
+<main<></main>

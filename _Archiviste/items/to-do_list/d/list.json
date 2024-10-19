@@ -1,0 +1,29 @@
+{
+    "tasks": [
+    {
+    "name": "Planification du projet",
+    "description": "Définir les objectifs, les tâches et les ressources nécessaires",
+    "priority": "Haute",
+    "deadline": "2023-06-15"
+    },
+    {
+    "name": "Recherche de marché",
+    "description": "Analyser les tendances et les concurrents",
+    "priority": "Moyenne",
+    "deadline": "2023-06-30"
+    },
+    {
+    "name": "Développement du produit",
+    "description": "Conception, prototypage et tests",
+    "priority": "Haute",
+    "deadline": "2023-07-31"
+    },
+    {
+    "name": "Lancement du produit",
+    "description": "Organisation de l'événement de lancement et campagnes marketing",
+    "priority": "Moyenne",
+    "deadline": "2023-08-31"
+    }
+    ]
+    }
+    

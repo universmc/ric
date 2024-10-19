@@ -1,0 +1,125 @@
+// Variables de base pour les couleurs et la police
+$primary-color: #4CAF50;
+$secondary-color: #333;
+$background-color: #f0f0f0;
+$text-color: #555;
+$font-family: 'Roboto', sans-serif;
+$timeline-border-color: rgba(0, 0, 0, 0.1);
+
+// Reset global
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family;
+  background-color: $background-color;
+  color: $text-color;
+  padding: 20px;
+}
+
+// Conteneur de la timeline
+.timeline {
+  position: relative;
+  margin: 20px auto;
+  padding: 20px 0;
+  max-width: 900px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+    background: $timeline-border-color;
+    transform: translateX(-50%);
+  }
+}
+
+// Élément de la timeline
+.timeline-item {
+  padding: 10px 40px;
+  position: relative;
+  width: 50%;
+  margin-bottom: 20px;
+  animation: slideIn 1.5s ease;
+
+  &:nth-child(odd) {
+    left: 0;
+  }
+
+  &:nth-child(even) {
+    left: 50%;
+  }
+
+  &:nth-child(odd) .timeline-content {
+    left: 100%;
+    transform: translateX(-120%);
+  }
+
+  &:nth-child(even) .timeline-content {
+    left: 0;
+    transform: translateX(120%);
+  }
+}
+
+// Contenu de la timeline
+.timeline-content {
+  position: relative;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease;
+
+  h2 {
+    color: $primary-color;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 1rem;
+    color: $secondary-color;
+    margin-bottom: 15px;
+  }
+
+  ul {
+    list-style-type: none;
+
+    li {
+      margin-bottom: 10px;
+      font-size: 0.9rem;
+      color: $text-color;
+    }
+  }
+
+  // Animation de survol
+  &:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+}
+
+// Keyframes pour les animations
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

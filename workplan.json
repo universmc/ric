@@ -1,0 +1,121 @@
+{
+    "tasks": [
+      {
+        "phase": "Phase 1: Préparation",
+        "location": "Open Space",
+        "time_start": "2024-10-15T04:00:00",
+        "time_end": "2024-10-15T05:00:00",
+        "description": "Préparation de l'environnement de travail, synchronisation des fichiers et outils nécessaires.",
+        "steps": [
+          "Organiser les fichiers de projet (Electron, GPT-Wallet, CVUN, Match in Learning).",
+          "Vérifier les dépendances des projets via Makefile.",
+          "Configurer et tester les scripts de build dans workflow.js.",
+          "Préparer await.json pour la gestion asynchrone des tâches.",
+          "Vérifier les scripts de déploiement sur le serveur privé.",
+          "Préparer les modules vidéo pour les réseaux sociaux (ShortVideoValue)."
+        ],
+        "status": "Terminé",
+        "progress": "100%"
+      },
+      {
+        "phase": "Phase 2: Travaux sur GPT-Wallet",
+        "location": "Open Space",
+        "time_start": "2024-10-15T05:00:00",
+        "time_end": "2024-10-15T07:00:00",
+        "description": "Développement et optimisation du projet GPT-Wallet pour monétiser les compétences via des Smart Contracts.",
+        "steps": [
+          "Finaliser les Smart Contracts (umcTokens.sol).",
+          "Intégrer les transactions Pi Coins pour la monétisation des compétences.",
+          "Améliorer les interactions utilisateur avec l'assistant AI (@MandatoryAi_bot).",
+          "Rédiger la documentation pour les utilisateurs du GPT-Wallet."
+        ],
+        "status": "En cours",
+        "progress": "10%"
+      },
+      {
+        "phase": "Phase 3: Présentation du projet à l'université",
+        "location": "Université",
+        "time_start": "2024-10-15T07:00:00",
+        "time_end": "2024-10-15T09:00:00",
+        "description": "Présentation du projet et collecte de données à l'université.",
+        "steps": [
+          "Préparer et présenter le questionnaire sur la réforme du Code du Travail.",
+          "Discuter avec des citoyens et universitaires pour obtenir des retours.",
+          "Recueillir des données sur la valeur travail et le curriculum numérique.",
+          "Présenter la solution d'allocation universelle mensuelle basée sur le CVUN."
+        ],
+        "status": "En cours",
+        "progress": "0%"
+      },
+      {
+        "phase": "Phase 4: Pause",
+        "location": "Open Space",
+        "time_start": "2024-10-15T09:00:00",
+        "time_end": "2024-10-15T09:30:00",
+        "description": "Pause pour se détendre et réinitialiser l'esprit.",
+        "steps": [
+          "Bilan de la phase précédente.",
+          "Analyse des travaux réalisés.",
+          "Planification des prochaines étapes."
+        ],
+        "status": "Terminé",
+        "progress": "100%"
+      },
+      {
+        "phase": "Phase 5: Récolte d'idées à l'Open Space",
+        "location": "Open Space",
+        "time_start": "2024-10-15T09:30:00",
+        "time_end": "2024-10-15T11:30:00",
+        "description": "Récolte d'idées et ressources pour le projet.",
+        "steps": [
+          "Discussion avec des professionnels et utilisateurs sur les méthodes de développement.",
+          "Recueillir des suggestions pour améliorer le projet.",
+          "Développer des méthodes et données pour l'optimisation du projet."
+        ],
+        "status": "En cours",
+        "progress": "50%"
+      },
+      {
+        "phase": "Phase 6: Tribunal pour l'aide juridictionnelle",
+        "location": "Tribunal",
+        "time_start": "2024-10-15T11:30:00",
+        "time_end": "2024-10-15T12:30:00",
+        "description": "Se rendre au tribunal civil pour obtenir l'aide juridictionnelle.",
+        "steps": [
+          "Obtenir des informations sur les procédures pour obtenir l'aide juridictionnelle.",
+          "Rédiger les courriers nécessaires pour présenter le cas.",
+          "Discuter de la défense face à la répression financière."
+        ],
+        "status": "En cours",
+        "progress": "40%"
+      },
+      {
+        "phase": "Phase 7: Documentation et finalisation",
+        "location": "Open Space",
+        "time_start": "2024-10-15T12:30:00",
+        "time_end": "2024-10-15T13:30:00",
+        "description": "Finalisation de la documentation technique et utilisateur pour les projets.",
+        "steps": [
+          "Rédiger la documentation utilisateur pour GPT-Wallet et CVUN.",
+          "Documenter les parcours d'apprentissage dans Match in Learning.",
+          "Finaliser la documentation sur l'intégration des assistants IA dans les projets."
+        ],
+        "status": "En cours",
+        "progress": "60%"
+      },
+      {
+        "phase": "Phase 8: Récapitulatif et planification des étapes suivantes",
+        "location": "Open Space",
+        "time_start": "2024-10-15T13:30:00",
+        "time_end": "2024-10-15T14:00:00",
+        "description": "Bilan des tâches accomplies et planification des prochaines étapes.",
+        "steps": [
+          "Revoir les objectifs atteints pendant la journée.",
+          "Planifier les étapes suivantes pour chaque projet (CVUN, GPT-Wallet, Match in Learning).",
+          "Préparer le calendrier pour les prochains développements."
+        ],
+        "status": "En cours",
+        "progress": "10%"
+      }
+    ]
+  }

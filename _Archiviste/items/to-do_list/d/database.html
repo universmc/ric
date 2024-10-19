@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>database</title>
+</head>
+<body>
+<table id="task-table">
+<thead>
+<tr>
+<th>Nom</th>
+<th>Description</th>
+<th>Priorité</th>
+<th>Date de remise</th>
+</tr>
+</thead>
+<tbody id="task-body">
+</tbody>
+</table>
+<script>
+        // Lire le fichier JSON (ajustez l'URL selon votre configuration)
+        fetch('list.json')
+            .then(response => response.json())
+            .then(data => {
+                // Récupérer le corps de la table
+                const taskBody = document.getElementById('task-body');
+
+                // Parcourir les données JSON
+                for (const task of data) {
+                    // Créer une nouvelle ligne de table
+                    const newRow = document.createElement('tr');
+
+                    // Créer des cellules de table pour chaque propriété de la tâche
+                    const nameCell = document.createElement('td');
+                    nameCell.textContent = task.name;
+                    newRow.appendChild(nameCell);
+
+                    const descriptionCell = document.createElement('td');
+                    descriptionCell.textContent = task.description;
+                    newRow.appendChild(descriptionCell);
+
+                    const priorityCell = document.createElement('td');
+                    priorityCell.textContent = task.priority;
+                    newRow.appendChild(priorityCell);
+
+                    const deadlineCell = document.createElement('td');
+                    deadlineCell.textContent = task.deadline;
+                    newRow.appendChild(deadlineCell);
+                    // Ajouter la ligne à la table
+                    taskBody.appendChild(newRow);
+                }
+            });
+    </script>
+</body>
+</html>

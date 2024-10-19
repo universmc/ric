@@ -1,39 +1,93 @@
-/* style.css */
+@charset "UTF-8";
+/*
+Theme Name: XorldTheme
+Theme URI: http://wp.univers-mc.cloud/theme-world
+Author: Maestro Mickael
+Author URI: http://wp.univers-mc.cloud
+Description: Un thème personnalisé pour wp.univers-mc.cloud.
+Version: 1.0
+*/
 html, body {
   min-width: 100vh;
   min-height: 100vh;
   padding: 0;
   margin: 0;
 }
-body {
-  min-height: auto;
-  min-width: auto;
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
+
+* {
+  box-sizing: border-box;
 }
 
 header {
+  min-width: 100vh;
+  min-height: 10vh;
   display: flex;
-  min-width: 100%;
-  background-color: #1c1b1b;
-  color: white;
+  flex-direction: column;
+  min-width: 50px;
+  background-color: rgb(16, 22, 32);
   text-align: center;
-  padding: 10px 0;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 20px;
+}
+
+.menu li {
+  display: flex;
 }
 
 main {
-  margin: 20px;
+  min-width: 99%;
+  min-height: 70%;
+  background-color: rgb(16, 22, 32);
+}
+
+/* style.css */
+.cms {
+  display: flex;
+  width: 100%;
+  background-color: #090012;
+}
+
+.navbar_intel {
+  display: flex;
+}
+
+.row1 {
+  display: flex;
+  flex-direction: column;
+  min-width: 3%;
+  min-height: 93vh;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  min-width: 100vh;
+  min-height: 80vh;
 }
 .mainContent {
-  display: flex;
-  flex-direction: row;
-
-}
-.mainContenair {
   display:flex;
-  flex-direction:row;
+  width:96%;
+  flex-direction:column;
 }
+.bg-content {
+  width: 90%;
+  height: 90%;
+}
+
+.bg-img {
+  width: 100%;
+}
+
+.index {
+  display: flex;
+}
+
 #sommaire {
   display: flex;
   flex-direction: column;
@@ -45,28 +99,28 @@ main {
   margin-right: 20px;
   border-radius: 5px;
 }
+
 .picker {
-background-color:#333;
-border: none;
+  background-color: #090012;
+  border: none;
 }
+
 .modal-sheet .modal-dialog {
   width: 380px;
-  transition: bottom .75s ease-in-out;
+  transition: bottom 0.75s ease-in-out;
 }
+
 .modal-sheet .modal-footer {
   padding-bottom: 2rem;
 }
-
 
 .cours-content {
   display: flex;
   justify-content: space-between;
 }
 
-
-
 #contenuCours {
-  width: 90%;
+  width: 100%;
   background-color: white;
   padding: 15px;
   border-radius: 5px;
@@ -90,16 +144,16 @@ border: none;
   color: #666;
 }
 
-
 /* Ajoutez plus de styles ici selon vos besoins */
 footer {
-  background-color: #333;
-  color: white;
+  display: flex;
+  min-width: 100vh;
+  min-height: 10vh;
+  justify-content: end;
+  background-color: rgb(16, 22, 32);
   text-align: center;
   padding: 10px 0;
-  position: fixed;
   bottom: 0;
-  width: 100%;
 }
 
 h2, h3 {
@@ -109,5 +163,7 @@ h2, h3 {
 p {
   line-height: 1.6;
 }
+
+
 
 /*# sourceMappingURL=style.css.map */
